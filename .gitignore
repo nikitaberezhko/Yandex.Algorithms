@@ -1,0 +1,110 @@
+.DS_Store
+Thumbs.db
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Bb]uild/
+[Aa]rtifacts/
+[Pp]ublish/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Logs
+[Ll]og/
+[Ll]ogs/
+[Ll]og*/
+*.log
+
+# Test results
+[Tt]est[Rr]esult*/
+[Tt]est[Rr]esults/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# JetBrains Rider / IntelliJ
+.idea/
+*.iml
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/
+
+# NuGet
+packages/
+.nuget/NuGet.Config
+.nuget/NuGet.exe
+.nuget/packages/
+*.nupkg
+*.snupkg
+
+# MSBuild (legacy / restore artifacts)
+project.lock.json
+project.assets.json
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+*.ncrunch*
+
+# Profiling
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Azure publish profiles
+*.azurePubxml
+*.pubxml
+*.publishSettings
+
+# ASP.NET / web
+App_Data/
+AppPackages/
+BundleArtifacts/
+Generated_Code/
+
+# Entity Framework
+Migrations/**/*.resx
+
+# BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+# Paket
+.paket/
+paket-files/
+
+# Coverage
+coverage/
+coverage*.json
+*.lcov
+*.opencover.xml
+*.cobertura.xml
+
+# Secrets / certificates (keep out of VCS)
+appsettings.*.local.json
+secrets.json
+*.pfx
+*.snk
+
+# Misc
+$tf/
+node_modules/
+
