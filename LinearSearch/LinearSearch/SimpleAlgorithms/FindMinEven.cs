@@ -10,7 +10,7 @@ public partial class SimpleAlgorithms
         int? evenMin = null; 
 
         foreach (var n in array)
-            if (n % 2 == 0 && (n < evenMin || evenMin == null)) 
+            if (n % 2 == 0 && (evenMin == null || n < evenMin)) 
                 evenMin = n;
         
         return evenMin;
