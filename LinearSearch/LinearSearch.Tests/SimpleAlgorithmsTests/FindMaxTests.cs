@@ -9,10 +9,9 @@ public class FindMaxTests
     {
         // Arrange
         int[] array = null;
-        var sut = new Sut();
 
         // Act & Assert
-        Assert.Throws<ArgumentNullException>(() => sut.FindMax(array));
+        Assert.Throws<ArgumentNullException>(() => Sut.FindMax(array));
     }
 
     [Fact]
@@ -20,10 +19,9 @@ public class FindMaxTests
     {
         // Arrange
         var array = new int[] { };
-        var sut = new Sut();
 
         // Act
-        var result = sut.FindMax(array);
+        var result = Sut.FindMax(array);
 
         // Assert
         Assert.Null(result);
@@ -34,10 +32,10 @@ public class FindMaxTests
     {
         // Arrange
         var array = new[] { 42 };
-        var sut = new Sut();
+
 
         // Act
-        var result = sut.FindMax(array);
+        var result = Sut.FindMax(array);
 
         // Assert
         Assert.Equal(42, result);
@@ -48,10 +46,10 @@ public class FindMaxTests
     {
         // Arrange
         var array = new[] { 3, 7, 2, 9, 1 };
-        var sut = new Sut();
+
 
         // Act
-        var result = sut.FindMax(array);
+        var result = Sut.FindMax(array);
 
         // Assert
         Assert.Equal(9, result);
@@ -62,10 +60,10 @@ public class FindMaxTests
     {
         // Arrange
         var array = new[] { -5, -2, -8, -1, -10 };
-        var sut = new Sut();
+
 
         // Act
-        var result = sut.FindMax(array);
+        var result = Sut.FindMax(array);
 
         // Assert
         Assert.Equal(-1, result);
@@ -76,10 +74,10 @@ public class FindMaxTests
     {
         // Arrange
         var array = new[] { -3, 5, -1, 8, -7, 2 };
-        var sut = new Sut();
+
 
         // Act
-        var result = sut.FindMax(array);
+        var result = Sut.FindMax(array);
 
         // Assert
         Assert.Equal(8, result);
@@ -90,10 +88,10 @@ public class FindMaxTests
     {
         // Arrange
         var array = new[] { 5, 9, 3, 9, 1, 9 };
-        var sut = new Sut();
+
 
         // Act
-        var result = sut.FindMax(array);
+        var result = Sut.FindMax(array);
 
         // Assert
         Assert.Equal(9, result);
@@ -104,10 +102,10 @@ public class FindMaxTests
     {
         // Arrange
         var array = new[] { int.MinValue, 0, int.MaxValue, -100, 100 };
-        var sut = new Sut();
+
 
         // Act
-        var result = sut.FindMax(array);
+        var result = Sut.FindMax(array);
 
         // Assert
         Assert.Equal(int.MaxValue, result);
@@ -118,10 +116,10 @@ public class FindMaxTests
     {
         // Arrange
         var array = new[] { int.MinValue, int.MinValue };
-        var sut = new Sut();
+
 
         // Act
-        var result = sut.FindMax(array);
+        var result = Sut.FindMax(array);
 
         // Assert
         Assert.Equal(int.MinValue, result);
@@ -132,10 +130,10 @@ public class FindMaxTests
     {
         // Arrange
         var array = new[] { 10, 5, 3, 1 };
-        var sut = new Sut();
+
 
         // Act
-        var result = sut.FindMax(array);
+        var result = Sut.FindMax(array);
 
         // Assert
         Assert.Equal(10, result);
@@ -146,10 +144,10 @@ public class FindMaxTests
     {
         // Arrange
         var array = new[] { 1, 3, 5, 10 };
-        var sut = new Sut();
+
 
         // Act
-        var result = sut.FindMax(array);
+        var result = Sut.FindMax(array);
 
         // Assert
         Assert.Equal(10, result);

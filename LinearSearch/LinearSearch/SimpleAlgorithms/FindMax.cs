@@ -1,8 +1,8 @@
 namespace LinearSearch.SimpleAlgorithms;
 
-public partial class SimpleAlgorithms
+public static partial class SimpleAlgorithms
 {
-    public int? FindMax(int[] array)
+    public static int? FindMax(int[] array)
     {
         if (array == null) throw new ArgumentNullException(nameof(array));
         if (array.Length == 0) return null;
