@@ -6,11 +6,9 @@ public partial class SimpleAlgorithms
     {
         if (array is null) throw new ArgumentNullException(nameof(array));
         
-        int? lastIndex = null;
+        for (var i = array.Length - 1; i >= 0; i--)
+            if (array[i] == target) return i;
         
-        for (var i = 0; i < array.Length; i++)
-            if (array[i] == target) lastIndex = i;
-        
-        return lastIndex;
+        return null;
     }
 }
