@@ -31,6 +31,20 @@ public class FindMaxPairTests
         Assert.Equal(10, result.Max);
         Assert.Equal(5, result.SecondMax);
     }
+    
+    [Fact]
+    public void Return_correct_pair_if_two_max_elements_equal()
+    {
+        // Arrange
+        var array = new[] { 3, 1, 2, 3 };
+        
+        // Act
+        var result = Sut.FindMaxPair(array);
+        
+        // Assert
+        Assert.Equal(3, result.Max);
+        Assert.Equal(3, result.SecondMax);
+    }
 
     [Fact]
     public void Return_correct_pair_when_max_at_end()
