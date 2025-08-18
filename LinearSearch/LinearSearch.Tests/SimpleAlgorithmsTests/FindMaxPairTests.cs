@@ -9,10 +9,9 @@ public class FindMaxPairTests
     {
         // Arrange
         var array = new[] { 3, 1 };
-        var sut = new Sut();
 
         // Act
-        var result = sut.FindMaxPair(array);
+        var result = Sut.FindMaxPair(array);
 
         // Assert
         Assert.Equal(3, result.Max);

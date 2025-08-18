@@ -2,7 +2,7 @@ namespace LinearSearch.SimpleAlgorithms;
 
 public partial class SimpleAlgorithms
 {
-    public MaxPair FindMaxPair(int[] array)
+    public static MaxPair FindMaxPair(int[] array)
     {
         if (array ==  null) throw new ArgumentNullException(nameof(array));
         if (array.Length < 2) throw new ArgumentOutOfRangeException(nameof(array));
