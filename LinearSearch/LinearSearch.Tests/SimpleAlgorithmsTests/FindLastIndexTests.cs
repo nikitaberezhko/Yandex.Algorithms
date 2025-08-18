@@ -70,7 +70,7 @@ public class FindLastIndexTests
     }
 
     [Fact]
-    public void Return_zero_when_target_absent()
+    public void Return_null_when_target_absent()
     {
         // Arrange
         var array = new[] { 1, 2, 3 };
@@ -79,11 +79,11 @@ public class FindLastIndexTests
         var index = Sut.FindLastIndex(array, 4);
 
         // Assert
-        Assert.Equal(0, index);
+        Assert.Null(index);
     }
 
     [Fact]
-    public void Return_zero_when_array_is_empty()
+    public void Return_null_when_array_is_empty()
     {
         // Arrange
         var array = Array.Empty<int>();
@@ -92,7 +92,7 @@ public class FindLastIndexTests
         var index = Sut.FindLastIndex(array, 1);
 
         // Assert
-        Assert.Equal(0, index);
+        Assert.Null(index);
     }
 
     [Fact]
@@ -132,6 +132,19 @@ public class FindLastIndexTests
 
         // Assert
         Assert.Equal(4, index);
+    }
+
+    [Fact]
+    public void Return_zero_when_zero_is_first_element()
+    {
+        // Arrange
+        var array = new[] { 0, 1, 2 };
+
+        // Act
+        var index = Sut.FindLastIndex(array, 0);
+
+        // Assert
+        Assert.Equal(0, index);
     }
 
     [Fact]
