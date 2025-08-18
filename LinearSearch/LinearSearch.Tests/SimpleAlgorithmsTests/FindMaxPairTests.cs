@@ -15,7 +15,7 @@ public class FindMaxPairTests
 
         // Assert
         Assert.Equal(3, result.Max);
-        Assert.Equal(3, result.SecondMax);
+        Assert.Equal(1, result.SecondMax);
     }
 
     [Fact]
@@ -29,7 +29,7 @@ public class FindMaxPairTests
 
         // Assert
         Assert.Equal(10, result.Max);
-        Assert.Equal(10, result.SecondMax);
+        Assert.Equal(5, result.SecondMax);
     }
 
     [Fact]
@@ -57,7 +57,7 @@ public class FindMaxPairTests
 
         // Assert
         Assert.Equal(10, result.Max);
-        Assert.Equal(10, result.SecondMax);
+        Assert.Equal(5, result.SecondMax);
     }
 
     [Fact]
@@ -85,7 +85,7 @@ public class FindMaxPairTests
 
         // Assert
         Assert.Equal(-1, result.Max);
-        Assert.Equal(-1, result.SecondMax);
+        Assert.Equal(-3, result.SecondMax);
     }
 
     [Fact]
