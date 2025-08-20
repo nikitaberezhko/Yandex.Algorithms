@@ -24,7 +24,7 @@ public partial class HomeworkAlgorithms
         var canBeDescending = true;
         var canBeWeaklyDescending = true;
         
-        for (int i = 1; i < seq.Length; i++)
+        for (var i = 1; i < seq.Length; i++)
         {
             var diff = seq[i] - seq[i - 1];
 
