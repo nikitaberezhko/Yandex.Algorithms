@@ -1,6 +1,9 @@
+using System;
+using System.Linq;
+
 namespace LinearSearch.SimpleAlgorithms;
 
-public partial class SimpleAlgorithms
+public static partial class SimpleAlgorithms
 {
     /// <summary>
     /// Дана последовательность слов

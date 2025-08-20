@@ -1,6 +1,8 @@
+using System;
+
 namespace LinearSearch.SimpleAlgorithms;
 
-public partial class SimpleAlgorithms
+public static partial class SimpleAlgorithms
 {
     public static int? FindMinEven(int[] array)
     {

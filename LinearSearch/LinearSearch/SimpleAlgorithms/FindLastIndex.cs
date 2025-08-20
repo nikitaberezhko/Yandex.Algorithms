@@ -1,3 +1,5 @@
+using System;
+
 namespace LinearSearch.SimpleAlgorithms;
 
 public static partial class SimpleAlgorithms

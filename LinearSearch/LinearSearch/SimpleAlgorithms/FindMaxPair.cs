@@ -1,3 +1,5 @@
+using System;
+
 namespace LinearSearch.SimpleAlgorithms;
 
 public static partial class SimpleAlgorithms
@@ -14,13 +16,13 @@ public static partial class SimpleAlgorithms
             ? array[0] 
             : array[1];
 
-        for (var index = 2; index < array.Length; index++)
+        for (var i = 2; i < array.Length; i++)
         {
-            if (array[index] > secondMax) secondMax = array[index];
-            if (array[index] > max)
+            if (array[i] > secondMax) secondMax = array[i];
+            if (array[i] > max)
             {
                 secondMax = max;
-                max = array[index];
+                max = array[i];
             }
         }
 

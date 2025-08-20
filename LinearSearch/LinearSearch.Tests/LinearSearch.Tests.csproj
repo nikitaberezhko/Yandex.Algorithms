@@ -24,4 +24,8 @@
       <ProjectReference Include="..\LinearSearch\LinearSearch.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Homework\" />
+    </ItemGroup>
+
 </Project>
