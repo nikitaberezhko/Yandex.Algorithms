@@ -9,10 +9,9 @@ public partial class SimpleAlgorithms
     public static string[] SelectShortestWords(string str)
     {
         if (str == null) throw new ArgumentNullException(nameof(str));
+        if (string.IsNullOrWhiteSpace(str)) return [];
     
         var words = str.Split(' ');
-
-        if (words.Length == 0) return Array.Empty<string>();
 
         int? minLength = null;
         foreach (var n in words)
