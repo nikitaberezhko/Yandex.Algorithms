@@ -2,7 +2,7 @@ using System;
 
 namespace LinearSearch.Homework;
 
-public partial class HomeworkAlgorithms
+public static partial class HomeworkAlgorithms
 {
     /// <summary>
     /// По последовательности чисел во входных данных определите ее вид:

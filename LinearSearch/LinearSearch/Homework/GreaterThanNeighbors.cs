@@ -2,7 +2,7 @@ using System;
 
 namespace LinearSearch.Homework;
 
-public partial class HomeworkAlgorithms
+public static partial class HomeworkAlgorithms
 {
     /// <summary>
     /// Дан список чисел. Определите, сколько в этом списке элементов, которые больше двух своих

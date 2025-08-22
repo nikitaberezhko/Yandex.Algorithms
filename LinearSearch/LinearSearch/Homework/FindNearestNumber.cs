@@ -2,7 +2,7 @@ using System;
 
 namespace LinearSearch.Homework;
 
-public partial class HomeworkAlgorithms
+public static partial class HomeworkAlgorithms
 {
     /// <summary>
     /// Напишите программу, которая находит в массиве элемент, самый близкий по величине к  данному числу.
