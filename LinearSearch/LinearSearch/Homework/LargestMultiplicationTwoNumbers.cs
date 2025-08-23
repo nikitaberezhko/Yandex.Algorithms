@@ -30,7 +30,7 @@ public static partial class HomeworkAlgorithms
         var negativeMax = first < second ? first : second;
         var negativeSecondMax = first > second ? first : second;
 
-        for (int i = 2; i < array.Length; i++)
+        for (var i = 2; i < array.Length; i++)
         {
             if (array[i] >= 0) continue;
             
