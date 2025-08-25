@@ -1,6 +1,9 @@
+using System;
+using System.Collections.Generic;
+
 namespace Set.SimpleAlgorithms;
 
-public partial class SimpleAlgorithms
+public static partial class SimpleAlgorithms
 {
     /// <summary>
     /// Дана последовательность положительных чисел длиной N и число Х
